@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/977b193dda.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>فروشگاه اینترنتی دیجی‌کالا</title>
+    <link rel="shortcut icon" href="img/logo-title.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#">
+            <div class="bg-header"></div>
+        </a>
+        <div class="search-header">
+            <div class="d1-search-header">
+                <a href="index.html"><img src="img/logo-site.svg" alt=""></a>
+                <form action="">
+                    <i class="fas fa-search"></i>
+                    <input type="search" placeholder="جستجو" class="input-search-header"
+                        onkeydown="check_btnclose_input_search()" onkeyup="check_btnclose_input_search()">
+                    <i class="	fa fa-close btn-input-search-header"></i>
+                    <div class="form-click-search-header">
+                        <div class="d-form-click-search-header">
+                            <div class="khat-blue"></div>
+                            <h3><i class="fas fa-fire"></i>جستجوهای پرطرفدار</h3>
+                            <div class="portarafdar-akhir">
+                                <a href="#">کاپشن مردانه<i class="fas fa-angle-left"></i></a>
+                                <a href="#">دفتر دولتی<i class="fas fa-angle-left"></i></a>
+                                <a href="#">مانتو پاییزی<i class="fas fa-angle-left"></i></a>
+                                <a href="#">خط کش شابلون دار<i class="fas fa-angle-left"></i></a>
+                                <a href="#">تقویت کننده وای فای<i class="fas fa-angle-left"></i></a>
+                            </div>
+                            <i class="fas fa-angle-right toggle-search-click toggle-search-click1"
+                                onclick="to_right()"></i>
+                            <i class="fas fa-angle-left toggle-search-click toggle-search-click2"
+                                onclick="to_left()"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="d2-search-header">
+                <div class="log-in-search-header" onclick="show_hesab_karbari()">
+                    <i class="material-icons"> person_outline</i>
+                    <i class="material-icons"> arrow_drop_down</i>
+                    <div class="hesab-karbari">
+                        <ul>
+                            <li><a href="#"><img src="img/person.svg" alt="" class="img1">امیررضا کاشی پزها<i
+                                        style="transform: translate(-5px,5px);"
+                                        class="	fas fa-angle-left pos-absolute-li"></i></a></li>
+                            <li>خارج از دسترس<div class="btn-red"></div>
+                            </li>
+                            <li>
+                                <p class=" pos-absolute-li">0 امتیاز</p><a href="#">دیجی کلاب</a><img class="img2"
+                                    src="img/club-point.svg" alt="">
+                            </li>
+                            <li><a href="#"><i class="	fas fa-shopping-bag"></i>سفارش ها</a></li>
+                            <li><a href="#"><i class="	far fa-heart"></i>لیست ها</a></li>
+                            <li>دیدگاه ها<i class="	far fa-comment"></i></li>
+                            <li>خروج از حساب کاربری<i class="	fas fa-sign-out-alt"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="khat-saf-header"></div>
+                <div class="sabad-kharid-search-header">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="dastebandi-header">
+            <ul>
+                <li class="li-daste-bandiha"><i class="	fa fa-navicon"></i>دسته بندی کالاها</li>
+                <li><a href="#"><i class="	fa fa-shopping-basket"></i>سوپرمارکت</a></li>
+                <li><a href="#"><i class="	fas fa-fire"></i>پرفروش ترین ها</a></li>
+                <li><a href="#"><i class="	fa fa-percent"></i>تخفیف ها و پیشنهاد ها</a></li>
+                <li><a href="#"><i class="	fa fa-percent"></i>شگفت انگیزها</a></li>
+                <li><a href="#">سوالی دارید؟</a></li>
+                <li><a href="#">فروشنده شوید!</a></li>
+                <div class="border-bottom-items"></div>
+            </ul>
+            <div class="d-chose-location">
+                <i class="material-icons "> location_on</i>
+                <p>لطفا شهر خود را انتخاب کنید</p>
+            </div>
+        </div>
+
+        <section class="sec-dastebandi-kalaha">
+            <ul class="ul-sidebar-dastebandi-kala">
+                <li><a href="#"><i class="fas fa-mobile-alt"></i>موبایل</a></li>
+                <li><a href="#"><i class="fas fa-laptop"></i>کالای دیجیتال</a></li>
+                <li><a href="#"><i class="fas fa-car"></i>خودرو، ابزار و تجهیزات صنعتی</a></li>
+                <li><a href="#"><i class="fas fa-tshirt"></i>مد و پوشاک</a></li>
+                <li><a href="#"><i class="fas fa-wine-bottle"></i>کالاهای سوپرمارکتی</a></li>
+                <li><a href="#"><i class="material-icons">child_care</i>اسباب بازی، کودک و نوزاد</a></li>
+                <li><a href="#"><i class="fas fa-tree"></i>محصولات بومی و محلی</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i>زیبایی و سلامت</a></li>
+                <li><a href="#"><i class="fas fa-couch"></i>خانه و آشپزخانه</a></li>
+                <li><a href="#"><i class="fas fa-book"></i>کتاب، لوازم تحریر و هنر</a></li>
+                <li><a href="#"><i class="fas fa-campground"></i>ورزش و سفر</a></li>
+            </ul>
+
+            <section class="sec-mains-li-dastebandi">
+                <section class="sec-main-li-dastebandi">
+
+                    <div class="heade-li-dastebandi">
+                        <h3><a href="#">همه</a><i class="	fas fa-angle-left"></i></h3>
+                    </div>
+
+                    <section class="body-li-dastebandi">
+
+                    </section>
+
+                </section>
+
+
+
+            </section>
+        </section>
+    </header>
+
+
+
+    <div class="safhe-black"></div>
+
+    <div class="chose-map">
+        <div class="heade-chose-map">
+            <h4>انتخاب آدرس</h4><i class="material-icons icon-d-chose-location">close</i>
+        </div>
+
+        <div class="body-chose-map">
+            <p>فزودن آدرس</p>
+            <i class="	fas fa-plus"></i>
+        </div>
+    </div>
+
+    <div class="location-map">
+        <div class="head-location-map">
+            <div>
+                <h4>آدرس جدید</h4>
+                <p>موقعیت مکانی آدرس را مشخص کنید.</p>
+            </div>
+            <i class="material-icons close-location-map">close</i>
+        </div>
+        <div class="body-location-map">
+            <i class="	fas fa-map-marker-alt"></i>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13860155.940029072!2d62.6927685466504!3d31.992701298195488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef7ec2ec16b1df1%3A0x40b095d39e51face!2z2KfbjNix2KfZhg!5e0!3m2!1sfa!2s!4v1663047705623!5m2!1sfa!2s"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <div class="footer-location-map">
+            <p>مرسوله‌های شما به این موقعیت ارسال خواهد شد.</p>
+            <a href="#">تایید و ادامه<i class="	fas fa-angle-left"></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/function.js"></script>
+
+</body>
+
+</html>
