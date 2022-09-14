@@ -40,6 +40,15 @@ $(document).ready(function () {
     $('.dastebandi-header ul li:nth-child(1)').hover(function () {
         $('.border-bottom-items').css('width', '120px');
         $('.border-bottom-items').css('left', '694px');
+
+        $('.form-click-search-header').css('opacity', '0');
+        $('.form-click-search-header').css('z-index', '-1000');
+        $('.d1-search-header form').css({
+            'border-radius': '8px',
+            'background-color': '#f0f0f1',
+            'border': 'none',
+            'height':'42px'
+        });
     }, function () {
         $('.border-bottom-items').css('width', '0');
     });
@@ -54,7 +63,8 @@ $(document).ready(function () {
             'border-radius': '8px 8px 0 0',
             'background-color': '#fff',
             'border': '1px solid #e0e0e2',
-            'border-bottom': 'none'
+            'border-bottom': 'none',
+            'height':'42px'
         });
     });
     $('.safhe-black').click(function () {
@@ -72,7 +82,6 @@ $(document).ready(function () {
         $('.location-map').css('opacity','0');
         $('.location-map').css('z-index','-10000');
     });
-
     $('.d-chose-location').click(function () {
         $('.chose-map').css('opacity','1');
         $('.chose-map').css('z-index','1000000');
@@ -80,14 +89,12 @@ $(document).ready(function () {
         $('.safhe-black').css('opacity','1');
         $('.safhe-black').css('z-index','100000');
     });
-
     $('.icon-d-chose-location').click(function(){
         $('.chose-map').css('opacity','0');
         $('.chose-map').css('z-index','-10000');
         $('.safhe-black').css('opacity','0');
         $('.safhe-black').css('z-index','-10000');
     });
-
     $('.body-chose-map').click(function(){
         $('.location-map').css('opacity','1');
         $('.location-map').css('z-index','100000');
@@ -101,13 +108,24 @@ $(document).ready(function () {
         $('.chose-map').css('opacity','0');
         $('.chose-map').css('z-index','-10000');
     });
-
     $('.li-daste-bandiha').hover(function(){
         $('.sec-dastebandi-kalaha').css('display','flex');
         $('.safhe-black').css('opacity', '1');
         $('.safhe-black').css('z-index', '1000');
         $('.border-bottom-items').css('width', '120px');
         $('.border-bottom-items').css('left', '694px');
+
+        $('.sec-main-li-dastebandi').css('display','inherit');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').css('display','none');
     },function(){
         $('.sec-dastebandi-kalaha').css('display','none');
         $('.safhe-black').css('opacity', '0');
@@ -129,6 +147,205 @@ $(document).ready(function () {
         });
     });
 
+    $('.li-mobile-dastebandi').hover(function(){
+        $('.sec-main-li-dastebandi').css('display','inherit');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').css('display','none');
+    },function(){
+        $('.sec-main-li-dastebandi').css('display','none');
+        $('.sec-main-li-dastebandi').hover(function(){
+            $(this).css('display','inherit');
+        });
+    });
+    $('.li-kalaDigikala-dastebandi').hover(function(){
+        $('.sec-main-li-dastebandi').css('display','none');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','inherit');
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').css('display','none');
+    },function(){
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-kalaDigikala-dastebandi').hover(function(){
+            $(this).css('display','inherit');
+        });
+    });
+    $('.li-sanati-dastebandi').hover(function(){
+        $('.sec-main-li-dastebandi').css('display','none');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').css('display','inherit');
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').css('display','none');
+    },function(){
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').hover(function(){
+            $(this).css('display','inherit');
+        });
+    });
+    $('.li-poshak-dastebandi').hover(function(){
+        $('.sec-main-li-dastebandi').css('display','none');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').css('display','inherit');
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').css('display','none');
+    },function(){
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').hover(function(){
+            $(this).css('display','inherit');
+        });
+    });
+    $('.li-supermarket-dastebandi').hover(function(){
+        $('.sec-main-li-dastebandi').css('display','none');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').css('display','inherit');
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').css('display','none');
+    },function(){
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').hover(function(){
+            $(this).css('display','inherit');
+        });
+    });
+    $('.li-kodak-dastebandi').hover(function(){
+        $('.sec-main-li-dastebandi').css('display','none');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').css('display','inherit');
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').css('display','none');
+    },function(){
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').hover(function(){
+            $(this).css('display','inherit');
+        });
+    });
+    $('.li-mahali-dastebandi').hover(function(){
+        $('.sec-main-li-dastebandi').css('display','none');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').css('display','inherit');
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').css('display','none');
+    },function(){
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').hover(function(){
+            $(this).css('display','inherit');
+        });
+    });
+    $('.li-zibaii-dastebandi').hover(function(){
+        $('.sec-main-li-dastebandi').css('display','none');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').css('display','inherit');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').css('display','none');
+    },function(){
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').hover(function(){
+            $(this).css('display','inherit');
+        });
+    });
+    $('.li-ashpazkhane-dastebandi').hover(function(){
+        $('.sec-main-li-dastebandi').css('display','none');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','inherit');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').css('display','none');
+    },function(){
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').hover(function(){
+            $(this).css('display','inherit');
+        });
+    });
+    $('.li-lavazemTahril-dastebandi').hover(function(){
+        $('.sec-main-li-dastebandi').css('display','none');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','inherit');
+        $('.sec-li-varzesh-dastebandi').css('display','none');
+    },function(){
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').hover(function(){
+            $(this).css('display','inherit');
+        });
+    });
+    $('.li-varzesh-dastebandi').hover(function(){
+        $('.sec-main-li-dastebandi').css('display','none');
+        $('.sec-li-kalaDigikala-dastebandi').css('display','none');
+        $('.sec-li-sanati-dastebandi').css('display','none');
+        $('.sec-li-poshak-dastebandi').css('display','none');
+        $('.sec-li-supermarket-dastebandi').css('display','none');
+        $('.sec-li-kodak-dastebandi').css('display','none');
+        $('.sec-li-mahali-dastebandi').css('display','none');
+        $('.sec-li-zibaii-dastebandi').css('display','none');
+        $('.sec-li-ashpazkhane-dastebandi').css('display','none');
+        $('.sec-li-lavazemTahril-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').css('display','inherit');
+    },function(){
+        $('.sec-li-varzesh-dastebandi').css('display','none');
+        $('.sec-li-varzesh-dastebandi').hover(function(){
+            $(this).css('display','inherit');
+        });
+    });
+    
 });
 
 
@@ -172,5 +389,47 @@ function to_right() {
         left: 500,
         behavior: 'smooth'
     })
+}
+
+function to_left_sec7(){
+    document.querySelector('.body-sec7-main').scrollBy({
+        left:200,
+        behavior:'smooth'
+    });
+}
+
+function to_right_sec7(){
+    document.querySelector('.body-sec7-main').scrollBy({
+        left:-200,
+        behavior:'smooth'
+    });
+}
+
+function to_left_sec8(){
+    document.querySelector('.body-sec8-main').scrollBy({
+        left:170,
+        behavior:'smooth'
+    });
+}
+
+function to_right_sec8(){
+    document.querySelector('.body-sec8-main').scrollBy({
+        left:-170,
+        behavior:'smooth'
+    });
+}
+
+function to_left_sec16(){
+    document.querySelector('.body-sec16-main').scrollBy({
+        left:330,
+        behavior:'smooth'
+    });
+}
+
+function to_right_sec16(){
+    document.querySelector('.body-sec16-main').scrollBy({
+        left:-330,
+        behavior:'smooth'
+    });
 }
 
