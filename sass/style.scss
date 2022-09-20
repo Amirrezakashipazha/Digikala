@@ -554,7 +554,7 @@ header{
         right: 1%;
         left: 1%;
         width: 98%;
-        height: 68%;
+        height: 530px;
         background-color: #fff;
         border-radius: 0 0 8px 8px;
         display: none;
@@ -643,6 +643,7 @@ header{
                         li{
                             margin-top: 6px;
                             min-height: 26px;
+                            font-size: 14px;
                             &:hover{
                                 a{
                                     color: #f62633;
@@ -855,8 +856,7 @@ header{
             bottom: 30px;
             left: 20px;
         }
-       div{
-            
+       div{    
             width: 4px;
             height: 4px;
             background-color: #0c0c0c;
@@ -882,7 +882,7 @@ header{
         border-radius: 50%;
         padding: 11px 15px;
         color: #303030;
-        z-index: 10000;      
+        z-index: 10;      
         opacity: 0;
         @media (max-width:1020px) {
             display: none;
@@ -3000,10 +3000,13 @@ footer{
         }
     }
     .d2-nav-mobile{
+        border-bottom: 1px solid #f0f0f1;
+        margin: 0 20px;
+
         ul{
+            
             li{
                 @include flex(row,flex-start ,center );
-                padding: 0 20px;
                 height: 52px;
                 a{
                     color: #424750;
@@ -3019,18 +3022,56 @@ footer{
             }
         }
     }
-    .d3-mobile{
+    .d3-nav-mobile{
         ul{
             li{
                 @include flex(row,space-between,center );
                 padding: 0 20px;
                 height: 52px;
+                font-size: 17px;
+
                 h4{
                     margin: 16px 0;
                     padding-right: 20px;
                     color: #000;
                     font-weight: 500;
                     font-size: 19px;
+                    padding-right: 0;
+                }
+            }
+            .ul-child-d3-nav-mobile{
+                background-color: #f0f0f1;
+                padding-right: 20px;
+                display: none;
+                li{
+                    a{
+                        color: #424750;
+                    }
+                }
+                .hame-mavared-in-daste{
+                    @include flex(row,flex-start ,center );
+                    color: #a1a3a8;
+                    
+                    a{
+                        color: #a1a3a8;
+                    }
+                    i{
+                        font-size: 11px;
+                        padding-right: 5px;
+                    }
+                }
+                .ul-child-child-d3-mobile{
+                    padding-right: 20px;
+                    display: none;
+                    border-bottom: 1px solid #dbdbdb;
+                    li{
+                        font-size: 14px;
+                    }
+                    .hame-mavared-in-daste{
+                        a{
+                            color: #a1a3a8;
+                        }
+                    }
                 }
             }
         }

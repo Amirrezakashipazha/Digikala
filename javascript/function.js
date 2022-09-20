@@ -83,7 +83,7 @@ $(document).ready(function () {
         $('.chose-map').css('z-index', '-10000');
         $('.location-map').css('opacity', '0');
         $('.location-map').css('z-index', '-10000');
-        $('.nav-mobile').css('right','-100%');
+        $('.nav-mobile').css('right', '-100%');
     });
     $('.d-chose-location').click(function () {
         $('.chose-map').css('opacity', '1');
@@ -780,7 +780,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.d4-h-mobile').click(function(){
+    $('.d4-h-mobile').click(function () {
         $('.chose-map').css('opacity', '1');
         $('.chose-map').css('z-index', '1000000');
 
@@ -788,15 +788,15 @@ $(document).ready(function () {
         $('.safhe-black').css('z-index', '100000');
     });
 
-    $('.form-search-mobile').click(function(){
-        $('.search-mobile').css('bottom','0');
+    $('.form-search-mobile').click(function () {
+        $('.search-mobile').css('bottom', '0');
         $('.safhe-black').css('opacity', '1');
         $('.safhe-black').css('z-index', '100');
         $('.safhe-black').css('transition', 'all 0s');
     });
 
-    $('.btn-close-search-mobile').click(function(){
-        $('.search-mobile').css('bottom','-100%');
+    $('.btn-close-search-mobile').click(function () {
+        $('.search-mobile').css('bottom', '-100%');
         $('.safhe-black').css('opacity', '0');
         $('.safhe-black').css('z-index', '-1000');
         $('.safhe-black').css('transition', 'all 0s');
@@ -1013,13 +1013,13 @@ $(document).ready(function () {
         }
     }, 5000);
 
-    $(window).scroll(function(){
-        if($(window).scrollTop()>500){
-            $('.dastebandi-header').css('display','none');
-            $('header').css('height','125px');
-        } else{
-            $('.dastebandi-header').css('display','flex');
-            $('header').css('height','161px');
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 500) {
+            $('.dastebandi-header').css('display', 'none');
+            $('header').css('height', '125px');
+        } else {
+            $('.dastebandi-header').css('display', 'flex');
+            $('header').css('height', '161px');
         }
     });
 });
@@ -1036,9 +1036,9 @@ function check_btnclose_input_search() {
     }
 }
 
-function close_input_search(){
-    document.querySelector('.input-search-header').value='';
-    document.querySelector('.btn-input-search-header').style.display='none';
+function close_input_search() {
+    document.querySelector('.input-search-header').value = '';
+    document.querySelector('.btn-input-search-header').style.display = 'none';
 }
 
 function check_btnclose_input_search2() {
@@ -1051,9 +1051,9 @@ function check_btnclose_input_search2() {
     }
 }
 
-function close_input_search2(){
-    document.querySelector('.input-search-header2').value='';
-    document.querySelector('.btn-input-search-header2').style.display='none';
+function close_input_search2() {
+    document.querySelector('.input-search-header2').value = '';
+    document.querySelector('.btn-input-search-header2').style.display = 'none';
 }
 
 function show_hesab_karbari() {
@@ -1210,14 +1210,14 @@ function show_safhe_poshtiban() {
     }
 }
 
-function close_safhe_poshtiban(){
+function close_safhe_poshtiban() {
     let safhe_poshtiban = document.querySelector('.safhe-call-poshtiban');
     let btn_poshtiban = document.querySelector('.btn-poshtiban');
     safhe_poshtiban.style.bottom = '-100%';
     btn_poshtiban.innerHTML = 'headset_mic';
 }
 
-function show_safhe_poshtiban_mobile(){
+function show_safhe_poshtiban_mobile() {
     let safhe_poshtiban = document.querySelector('.safhe-call-poshtiban');
     let btn_poshtiban = document.querySelector('.btn-poshtiban');
 
@@ -1230,10 +1230,1254 @@ function show_safhe_poshtiban_mobile(){
     }
 }
 
-function show_nav_mobile(){
-    document.querySelector('.nav-mobile').style.right='0';
-    document.querySelector('.safhe-black').style.zIndex='10000';
-    document.querySelector('.safhe-black').style.opacity='1';
+function show_nav_mobile() {
+    document.querySelector('.nav-mobile').style.right = '0';
+    document.querySelector('.safhe-black').style.zIndex = '10000';
+    document.querySelector('.safhe-black').style.opacity = '1';
+}
+
+
+function show_ul_dastebandi_mobile() {
+    let ul_mobile = document.querySelector('.ul-mobile-d3-nav-mobile');
+    let li_mobile = document.querySelector('.li-mobile');
+    let icon_li_mobile = document.querySelector('.icon_li_mobile');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mobile_child1(){
+    let ul_mobile = document.querySelector('.ul-child-child-d3-nav-mobile1');
+    let li_mobile = document.querySelector('.li_mobile_child1');
+    let icon_li_mobile = document.querySelector('.icon_li_mobile_child1');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mobile_child2(){
+    let ul_mobile = document.querySelector('.ul-child-child-d3-nav-mobile2');
+    let li_mobile = document.querySelector('.li_mobile_child2');
+    let icon_li_mobile = document.querySelector('.icon_li_mobile_child2');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mobile_child3(){
+    let ul_mobile = document.querySelector('.ul-child-child-d3-nav-mobile3');
+    let li_mobile = document.querySelector('.li_mobile_child3');
+    let icon_li_mobile = document.querySelector('.icon_li_mobile_child3');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mobile_child4(){
+    let ul_mobile = document.querySelector('.ul-child-child-d3-nav-mobile4');
+    let li_mobile = document.querySelector('.li_mobile_child4');
+    let icon_li_mobile = document.querySelector('.icon_li_mobile_child4');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mobile_child5(){
+    let ul_mobile = document.querySelector('.ul-child-child-d3-nav-mobile5');
+    let li_mobile = document.querySelector('.li_mobile_child5');
+    let icon_li_mobile = document.querySelector('.icon_li_mobile_child5');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+
+function show_ul_dastebandi_kaladigikala(){
+    let ul_mobile = document.querySelector('.ul-kaladigikala-d3-nav-mobile');
+    let li_mobile = document.querySelector('.li-kaladigikala');
+    let icon_li_mobile = document.querySelector('.icon_li_kaladigikala');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_kaladigikala_child1(){
+    let ul_mobile = document.querySelector('.ul-kaladigikala-child-child-d3-nav-mobile1');
+    let li_mobile = document.querySelector('.li_kaladigikala_child1');
+    let icon_li_mobile = document.querySelector('.icon_li_kaladigikala_child1');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_kaladigikala_child2(){
+    let ul_mobile = document.querySelector('.ul-kaladigikala-child-child-d3-nav-mobile2');
+    let li_mobile = document.querySelector('.li_kaladigikala_child2');
+    let icon_li_mobile = document.querySelector('.icon_li_kaladigikala_child2');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_kaladigikala_child3(){
+    let ul_mobile = document.querySelector('.ul-kaladigikala-child-child-d3-nav-mobile3');
+    let li_mobile = document.querySelector('.li_kaladigikala_child3');
+    let icon_li_mobile = document.querySelector('.icon_li_kaladigikala_child3');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_kaladigikala_child4(){
+    let ul_mobile = document.querySelector('.ul-kaladigikala-child-child-d3-nav-mobile4');
+    let li_mobile = document.querySelector('.li_kaladigikala_child4');
+    let icon_li_mobile = document.querySelector('.icon_li_kaladigikala_child4');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_kaladigikala_child5(){
+    let ul_mobile = document.querySelector('.ul-kaladigikala-child-child-d3-nav-mobile5');
+    let li_mobile = document.querySelector('.li_kaladigikala_child5');
+    let icon_li_mobile = document.querySelector('.icon_li_kaladigikala_child5');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_kaladigikala_child6(){
+    let ul_mobile = document.querySelector('.ul-kaladigikala-child-child-d3-nav-mobile6');
+    let li_mobile = document.querySelector('.li_kaladigikala_child6');
+    let icon_li_mobile = document.querySelector('.icon_li_kaladigikala_child6');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_kaladigikala_child7(){
+    let ul_mobile = document.querySelector('.ul-kaladigikala-child-child-d3-nav-mobile7');
+    let li_mobile = document.querySelector('.li_kaladigikala_child7');
+    let icon_li_mobile = document.querySelector('.icon_li_kaladigikala_child7');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+
+function show_ul_dastebandi_khodro(){
+    let ul_mobile = document.querySelector('.ul-khodro-d3-nav-mobile');
+    let li_mobile = document.querySelector('.li-khodro');
+    let icon_li_mobile = document.querySelector('.icon_li_khodro');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khodro_child1(){
+    let ul_mobile = document.querySelector('.ul-khodro-child-child-d3-nav-mobile1');
+    let li_mobile = document.querySelector('.li_khodro_child1');
+    let icon_li_mobile = document.querySelector('.icon_li_khodro_child1');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khodro_child2(){
+    let ul_mobile = document.querySelector('.ul-khodro-child-child-d3-nav-mobile2');
+    let li_mobile = document.querySelector('.li_khodro_child2');
+    let icon_li_mobile = document.querySelector('.icon_li_khodro_child2');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khodro_child3(){
+    let ul_mobile = document.querySelector('.ul-khodro-child-child-d3-nav-mobile3');
+    let li_mobile = document.querySelector('.li_khodro_child3');
+    let icon_li_mobile = document.querySelector('.icon_li_khodro_child3');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khodro_child4(){
+    let ul_mobile = document.querySelector('.ul-khodro-child-child-d3-nav-mobile4');
+    let li_mobile = document.querySelector('.li_khodro_child4');
+    let icon_li_mobile = document.querySelector('.icon_li_khodro_child4');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khodro_child5(){
+    let ul_mobile = document.querySelector('.ul-khodro-child-child-d3-nav-mobile5');
+    let li_mobile = document.querySelector('.li_khodro_child5');
+    let icon_li_mobile = document.querySelector('.icon_li_khodro_child5');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khodro_child6(){
+    let ul_mobile = document.querySelector('.ul-khodro-child-child-d3-nav-mobile6');
+    let li_mobile = document.querySelector('.li_khodro_child6');
+    let icon_li_mobile = document.querySelector('.icon_li_khodro_child6');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khodro_child7(){
+    let ul_mobile = document.querySelector('.ul-khodro-child-child-d3-nav-mobile7');
+    let li_mobile = document.querySelector('.li_khodro_child7');
+    let icon_li_mobile = document.querySelector('.icon_li_khodro_child7');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khodro_child8(){
+    let ul_mobile = document.querySelector('.ul-khodro-child-child-d3-nav-mobile8');
+    let li_mobile = document.querySelector('.li_khodro_child8');
+    let icon_li_mobile = document.querySelector('.icon_li_khodro_child8');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khodro_child9(){
+    let ul_mobile = document.querySelector('.ul-khodro-child-child-d3-nav-mobile9');
+    let li_mobile = document.querySelector('.li_khodro_child9');
+    let icon_li_mobile = document.querySelector('.icon_li_khodro_child9');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khodro_child10(){
+    let ul_mobile = document.querySelector('.ul-khodro-child-child-d3-nav-mobile10');
+    let li_mobile = document.querySelector('.li_khodro_child10');
+    let icon_li_mobile = document.querySelector('.icon_li_khodro_child10');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+
+function show_ul_dastebandi_mod(){
+    let ul_mobile = document.querySelector('.ul-mod-d3-nav-mobile');
+    let li_mobile = document.querySelector('.li-mod');
+    let icon_li_mobile = document.querySelector('.icon_li_mod');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mod_child1(){
+    let ul_mobile = document.querySelector('.ul-mod-child-child-d3-nav-mobile1');
+    let li_mobile = document.querySelector('.li_mod_child1');
+    let icon_li_mobile = document.querySelector('.icon_li_mod_child1');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mod_child2(){
+    let ul_mobile = document.querySelector('.ul-mod-child-child-d3-nav-mobile2');
+    let li_mobile = document.querySelector('.li_mod_child2');
+    let icon_li_mobile = document.querySelector('.icon_li_mod_child2');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mod_child3(){
+    let ul_mobile = document.querySelector('.ul-mod-child-child-d3-nav-mobile3');
+    let li_mobile = document.querySelector('.li_mod_child3');
+    let icon_li_mobile = document.querySelector('.icon_li_mod_child3');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mod_child4(){
+    let ul_mobile = document.querySelector('.ul-mod-child-child-d3-nav-mobile4');
+    let li_mobile = document.querySelector('.li_mod_child4');
+    let icon_li_mobile = document.querySelector('.icon_li_mod_child4');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mod_child5(){
+    let ul_mobile = document.querySelector('.ul-mod-child-child-d3-nav-mobile5');
+    let li_mobile = document.querySelector('.li_mod_child5');
+    let icon_li_mobile = document.querySelector('.icon_li_mod_child5');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mod_child6(){
+    let ul_mobile = document.querySelector('.ul-mod-child-child-d3-nav-mobile6');
+    let li_mobile = document.querySelector('.li_mod_child6');
+    let icon_li_mobile = document.querySelector('.icon_li_mod_child6');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mod_child7(){
+    let ul_mobile = document.querySelector('.ul-mod-child-child-d3-nav-mobile7');
+    let li_mobile = document.querySelector('.li_mod_child7');
+    let icon_li_mobile = document.querySelector('.icon_li_mod_child7');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mod_child8(){
+    let ul_mobile = document.querySelector('.ul-mod-child-child-d3-nav-mobile8');
+    let li_mobile = document.querySelector('.li_mod_child8');
+    let icon_li_mobile = document.querySelector('.icon_li_mod_child8');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+
+function show_ul_dastebandi_super(){
+    let ul_mobile = document.querySelector('.ul-super-d3-nav-mobile');
+    let li_mobile = document.querySelector('.li-super');
+    let icon_li_mobile = document.querySelector('.icon_li_super');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_super_child1(){
+    let ul_mobile = document.querySelector('.ul-super-child-child-d3-nav-mobile1');
+    let li_mobile = document.querySelector('.li_super_child1');
+    let icon_li_mobile = document.querySelector('.icon_li_super_child1');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_super_child2(){
+    let ul_mobile = document.querySelector('.ul-super-child-child-d3-nav-mobile2');
+    let li_mobile = document.querySelector('.li_super_child2');
+    let icon_li_mobile = document.querySelector('.icon_li_super_child2');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_super_child3(){
+    let ul_mobile = document.querySelector('.ul-super-child-child-d3-nav-mobile3');
+    let li_mobile = document.querySelector('.li_super_child3');
+    let icon_li_mobile = document.querySelector('.icon_li_super_child3');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_super_child4(){
+    let ul_mobile = document.querySelector('.ul-super-child-child-d3-nav-mobile4');
+    let li_mobile = document.querySelector('.li_super_child4');
+    let icon_li_mobile = document.querySelector('.icon_li_super_child4');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_super_child5(){
+    let ul_mobile = document.querySelector('.ul-super-child-child-d3-nav-mobile5');
+    let li_mobile = document.querySelector('.li_super_child5');
+    let icon_li_mobile = document.querySelector('.icon_li_super_child5');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_super_child6(){
+    let ul_mobile = document.querySelector('.ul-super-child-child-d3-nav-mobile6');
+    let li_mobile = document.querySelector('.li_super_child6');
+    let icon_li_mobile = document.querySelector('.icon_li_super_child6');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+
+function show_ul_dastebandi_asbabbazi(){
+    let ul_mobile = document.querySelector('.ul-asbabbazi-d3-nav-mobile');
+    let li_mobile = document.querySelector('.li-asbabbazi');
+    let icon_li_mobile = document.querySelector('.icon_li_asbabbazi');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_asbabbazi_child1(){
+    let ul_mobile = document.querySelector('.ul-asbabbazi-child-child-d3-nav-mobile1');
+    let li_mobile = document.querySelector('.li_asbabbazi_child1');
+    let icon_li_mobile = document.querySelector('.icon_li_asbabbazi_child1');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_asbabbazi_child2(){
+    let ul_mobile = document.querySelector('.ul-asbabbazi-child-child-d3-nav-mobile2');
+    let li_mobile = document.querySelector('.li_asbabbazi_child2');
+    let icon_li_mobile = document.querySelector('.icon_li_asbabbazi_child2');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_asbabbazi_child3(){
+    let ul_mobile = document.querySelector('.ul-asbabbazi-child-child-d3-nav-mobile3');
+    let li_mobile = document.querySelector('.li_asbabbazi_child3');
+    let icon_li_mobile = document.querySelector('.icon_li_asbabbazi_child3');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_asbabbazi_child4(){
+    let ul_mobile = document.querySelector('.ul-asbabbazi-child-child-d3-nav-mobile4');
+    let li_mobile = document.querySelector('.li_asbabbazi_child4');
+    let icon_li_mobile = document.querySelector('.icon_li_asbabbazi_child4');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_asbabbazi_child5(){
+    let ul_mobile = document.querySelector('.ul-asbabbazi-child-child-d3-nav-mobile5');
+    let li_mobile = document.querySelector('.li_asbabbazi_child5');
+    let icon_li_mobile = document.querySelector('.icon_li_asbabbazi_child5');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_asbabbazi_child6(){
+    let ul_mobile = document.querySelector('.ul-asbabbazi-child-child-d3-nav-mobile6');
+    let li_mobile = document.querySelector('.li_asbabbazi_child6');
+    let icon_li_mobile = document.querySelector('.icon_li_asbabbazi_child6');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_asbabbazi_child7(){
+    let ul_mobile = document.querySelector('.ul-asbabbazi-child-child-d3-nav-mobile7');
+    let li_mobile = document.querySelector('.li_asbabbazi_child7');
+    let icon_li_mobile = document.querySelector('.icon_li_asbabbazi_child7');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_asbabbazi_child8(){
+    let ul_mobile = document.querySelector('.ul-asbabbazi-child-child-d3-nav-mobile8');
+    let li_mobile = document.querySelector('.li_asbabbazi_child8');
+    let icon_li_mobile = document.querySelector('.icon_li_asbabbazi_child8');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_asbabbazi_child9(){
+    let ul_mobile = document.querySelector('.ul-asbabbazi-child-child-d3-nav-mobile9');
+    let li_mobile = document.querySelector('.li_asbabbazi_child9');
+    let icon_li_mobile = document.querySelector('.icon_li_asbabbazi_child9');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+
+function show_ul_dastebandi_mahsolat(){
+    let ul_mobile = document.querySelector('.ul-mahsolat-d3-nav-mobile');
+    let li_mobile = document.querySelector('.li-mahsolat');
+    let icon_li_mobile = document.querySelector('.icon_li_mahsolat');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mahsolat_child1(){
+    let ul_mobile = document.querySelector('.ul-mahsolat-child-child-d3-nav-mobile1');
+    let li_mobile = document.querySelector('.li_mahsolat_child1');
+    let icon_li_mobile = document.querySelector('.icon_li_mahsolat_child1');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mahsolat_child2(){
+    let ul_mobile = document.querySelector('.ul-mahsolat-child-child-d3-nav-mobile2');
+    let li_mobile = document.querySelector('.li_mahsolat_child2');
+    let icon_li_mobile = document.querySelector('.icon_li_mahsolat_child2');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mahsolat_child3(){
+    let ul_mobile = document.querySelector('.ul-mahsolat-child-child-d3-nav-mobile3');
+    let li_mobile = document.querySelector('.li_mahsolat_child3');
+    let icon_li_mobile = document.querySelector('.icon_li_mahsolat_child3');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mahsolat_child4(){
+    let ul_mobile = document.querySelector('.ul-mahsolat-child-child-d3-nav-mobile4');
+    let li_mobile = document.querySelector('.li_mahsolat_child4');
+    let icon_li_mobile = document.querySelector('.icon_li_mahsolat_child4');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mahsolat_child5(){
+    let ul_mobile = document.querySelector('.ul-mahsolat-child-child-d3-nav-mobile5');
+    let li_mobile = document.querySelector('.li_mahsolat_child5');
+    let icon_li_mobile = document.querySelector('.icon_li_mahsolat_child5');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mahsolat_child6(){
+    let ul_mobile = document.querySelector('.ul-mahsolat-child-child-d3-nav-mobile6');
+    let li_mobile = document.querySelector('.li_mahsolat_child6');
+    let icon_li_mobile = document.querySelector('.icon_li_mahsolat_child6');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_mahsolat_child7(){
+    let ul_mobile = document.querySelector('.ul-mahsolat-child-child-d3-nav-mobile7');
+    let li_mobile = document.querySelector('.li_mahsolat_child7');
+    let icon_li_mobile = document.querySelector('.icon_li_mahsolat_child7');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+
+function show_ul_dastebandi_zibaii(){
+    let ul_mobile = document.querySelector('.ul-zibaii-d3-nav-mobile');
+    let li_mobile = document.querySelector('.li-zibaii');
+    let icon_li_mobile = document.querySelector('.icon_li_zibaii');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_zibaii_child1(){
+    let ul_mobile = document.querySelector('.ul-zibaii-child-child-d3-nav-mobile1');
+    let li_mobile = document.querySelector('.li_zibaii_child1');
+    let icon_li_mobile = document.querySelector('.icon_li_zibaii_child1');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_zibaii_child2(){
+    let ul_mobile = document.querySelector('.ul-zibaii-child-child-d3-nav-mobile2');
+    let li_mobile = document.querySelector('.li_zibaii_child2');
+    let icon_li_mobile = document.querySelector('.icon_li_zibaii_child2');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_zibaii_child3(){
+    let ul_mobile = document.querySelector('.ul-zibaii-child-child-d3-nav-mobile3');
+    let li_mobile = document.querySelector('.li_zibaii_child3');
+    let icon_li_mobile = document.querySelector('.icon_li_zibaii_child3');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_zibaii_child4(){
+    let ul_mobile = document.querySelector('.ul-zibaii-child-child-d3-nav-mobile4');
+    let li_mobile = document.querySelector('.li_zibaii_child4');
+    let icon_li_mobile = document.querySelector('.icon_li_zibaii_child4');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_zibaii_child5(){
+    let ul_mobile = document.querySelector('.ul-zibaii-child-child-d3-nav-mobile5');
+    let li_mobile = document.querySelector('.li_zibaii_child5');
+    let icon_li_mobile = document.querySelector('.icon_li_zibaii_child5');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_zibaii_child6(){
+    let ul_mobile = document.querySelector('.ul-zibaii-child-child-d3-nav-mobile6');
+    let li_mobile = document.querySelector('.li_zibaii_child6');
+    let icon_li_mobile = document.querySelector('.icon_li_zibaii_child6');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+
+function show_ul_dastebandi_khane(){
+    let ul_mobile = document.querySelector('.ul-khane-d3-nav-mobile');
+    let li_mobile = document.querySelector('.li-khane');
+    let icon_li_mobile = document.querySelector('.icon_li_khane');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khane_child1(){
+    let ul_mobile = document.querySelector('.ul-khane-child-child-d3-nav-mobile1');
+    let li_mobile = document.querySelector('.li_khane_child1');
+    let icon_li_mobile = document.querySelector('.icon_li_khane_child1');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khane_child2(){
+    let ul_mobile = document.querySelector('.ul-khane-child-child-d3-nav-mobile2');
+    let li_mobile = document.querySelector('.li_khane_child2');
+    let icon_li_mobile = document.querySelector('.icon_li_khane_child2');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khane_child3(){
+    let ul_mobile = document.querySelector('.ul-khane-child-child-d3-nav-mobile3');
+    let li_mobile = document.querySelector('.li_khane_child3');
+    let icon_li_mobile = document.querySelector('.icon_li_khane_child3');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khane_child4(){
+    let ul_mobile = document.querySelector('.ul-khane-child-child-d3-nav-mobile4');
+    let li_mobile = document.querySelector('.li_khane_child4');
+    let icon_li_mobile = document.querySelector('.icon_li_khane_child4');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khane_child5(){
+    let ul_mobile = document.querySelector('.ul-khane-child-child-d3-nav-mobile5');
+    let li_mobile = document.querySelector('.li_khane_child5');
+    let icon_li_mobile = document.querySelector('.icon_li_khane_child5');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khane_child6(){
+    let ul_mobile = document.querySelector('.ul-khane-child-child-d3-nav-mobile6');
+    let li_mobile = document.querySelector('.li_khane_child6');
+    let icon_li_mobile = document.querySelector('.icon_li_khane_child6');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khane_child7(){
+    let ul_mobile = document.querySelector('.ul-khane-child-child-d3-nav-mobile7');
+    let li_mobile = document.querySelector('.li_khane_child7');
+    let icon_li_mobile = document.querySelector('.icon_li_khane_child7');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_khane_child8(){
+    let ul_mobile = document.querySelector('.ul-khane-child-child-d3-nav-mobile8');
+    let li_mobile = document.querySelector('.li_khane_child8');
+    let icon_li_mobile = document.querySelector('.icon_li_khane_child8');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+
+function show_ul_dastebandi_ketab(){
+    let ul_mobile = document.querySelector('.ul-ketab-d3-nav-mobile');
+    let li_mobile = document.querySelector('.li-ketab');
+    let icon_li_mobile = document.querySelector('.icon_li_ketab');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_ketab_child1(){
+    let ul_mobile = document.querySelector('.ul-ketab-child-child-d3-nav-mobile1');
+    let li_mobile = document.querySelector('.li_ketab_child1');
+    let icon_li_mobile = document.querySelector('.icon_li_ketab_child1');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_ketab_child2(){
+    let ul_mobile = document.querySelector('.ul-ketab-child-child-d3-nav-mobile2');
+    let li_mobile = document.querySelector('.li_ketab_child2');
+    let icon_li_mobile = document.querySelector('.icon_li_ketab_child2');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_ketab_child3(){
+    let ul_mobile = document.querySelector('.ul-ketab-child-child-d3-nav-mobile3');
+    let li_mobile = document.querySelector('.li_ketab_child3');
+    let icon_li_mobile = document.querySelector('.icon_li_ketab_child3');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_ketab_child4(){
+    let ul_mobile = document.querySelector('.ul-ketab-child-child-d3-nav-mobile4');
+    let li_mobile = document.querySelector('.li_ketab_child4');
+    let icon_li_mobile = document.querySelector('.icon_li_ketab_child4');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_ketab_child5(){
+    let ul_mobile = document.querySelector('.ul-ketab-child-child-d3-nav-mobile5');
+    let li_mobile = document.querySelector('.li_ketab_child5');
+    let icon_li_mobile = document.querySelector('.icon_li_ketab_child5');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_ketab_child6(){
+    let ul_mobile = document.querySelector('.ul-ketab-child-child-d3-nav-mobile6');
+    let li_mobile = document.querySelector('.li_ketab_child6');
+    let icon_li_mobile = document.querySelector('.icon_li_ketab_child6');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+
+function show_ul_dastebandi_varzesh(){
+    let ul_mobile = document.querySelector('.ul-varzesh-d3-nav-mobile');
+    let li_mobile = document.querySelector('.li-varzesh');
+    let icon_li_mobile = document.querySelector('.icon_li_varzesh');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_varzesh_child1(){
+    let ul_mobile = document.querySelector('.ul-varzesh-child-child-d3-nav-mobile1');
+    let li_mobile = document.querySelector('.li_varzesh_child1');
+    let icon_li_mobile = document.querySelector('.icon_li_varzesh_child1');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_varzesh_child2(){
+    let ul_mobile = document.querySelector('.ul-varzesh-child-child-d3-nav-mobile2');
+    let li_mobile = document.querySelector('.li_varzesh_child2');
+    let icon_li_mobile = document.querySelector('.icon_li_varzesh_child2');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_varzesh_child3(){
+    let ul_mobile = document.querySelector('.ul-varzesh-child-child-d3-nav-mobile3');
+    let li_mobile = document.querySelector('.li_varzesh_child3');
+    let icon_li_mobile = document.querySelector('.icon_li_varzesh_child3');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_varzesh_child4(){
+    let ul_mobile = document.querySelector('.ul-varzesh-child-child-d3-nav-mobile4');
+    let li_mobile = document.querySelector('.li_varzesh_child4');
+    let icon_li_mobile = document.querySelector('.icon_li_varzesh_child4');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
+}
+function show_ul_dastebandi_varzesh_child5(){
+    let ul_mobile = document.querySelector('.ul-varzesh-child-child-d3-nav-mobile5');
+    let li_mobile = document.querySelector('.li_varzesh_child5');
+    let icon_li_mobile = document.querySelector('.icon_li_varzesh_child5');
+    if (ul_mobile.style.display == 'inherit') {
+        ul_mobile.style.display = 'none';
+        li_mobile.style.color='#424750';
+        icon_li_mobile.style.transform='rotate(0)';
+    } else {
+        ul_mobile.style.display = 'inherit';
+        li_mobile.style.color='#ef4056';
+        icon_li_mobile.style.transform='rotate(180deg)';
+    }
 }
 
 
