@@ -83,6 +83,7 @@ $(document).ready(function () {
         $('.chose-map').css('z-index', '-10000');
         $('.location-map').css('opacity', '0');
         $('.location-map').css('z-index', '-10000');
+        $('.nav-mobile').css('right','-100%');
     });
     $('.d-chose-location').click(function () {
         $('.chose-map').css('opacity', '1');
@@ -129,6 +130,13 @@ $(document).ready(function () {
         $('.sec-li-lavazemTahril-dastebandi').css('display', 'none');
         $('.sec-li-varzesh-dastebandi').css('display', 'none');
     }, function () {
+
+        $('.d1-search-header form').css({
+            'border-radius': '8px',
+            'background-color': '#f0f0f1',
+            'border': '1px solid #fff'
+        });
+
         $('.sec-dastebandi-kalaha').css('display', 'none');
         $('.safhe-black').css('opacity', '0');
         $('.safhe-black').css('z-index', '-1000');
@@ -772,6 +780,28 @@ $(document).ready(function () {
         }
     });
 
+    $('.d4-h-mobile').click(function(){
+        $('.chose-map').css('opacity', '1');
+        $('.chose-map').css('z-index', '1000000');
+
+        $('.safhe-black').css('opacity', '1');
+        $('.safhe-black').css('z-index', '100000');
+    });
+
+    $('.form-search-mobile').click(function(){
+        $('.search-mobile').css('bottom','0');
+        $('.safhe-black').css('opacity', '1');
+        $('.safhe-black').css('z-index', '100');
+        $('.safhe-black').css('transition', 'all 0s');
+    });
+
+    $('.btn-close-search-mobile').click(function(){
+        $('.search-mobile').css('bottom','-100%');
+        $('.safhe-black').css('opacity', '0');
+        $('.safhe-black').css('z-index', '-1000');
+        $('.safhe-black').css('transition', 'all 0s');
+    });
+
     setInterval(function () {
         if ($('.d1-overflow-slider-big').css('right') == '0px') {
             $('.d1-overflow-slider-big').css('right', '-100%');
@@ -982,6 +1012,16 @@ $(document).ready(function () {
             $('.btns-slider-big div:nth-child(9)').removeClass('btn-select');
         }
     }, 5000);
+
+    $(window).scroll(function(){
+        if($(window).scrollTop()>500){
+            $('.dastebandi-header').css('display','none');
+            $('header').css('height','125px');
+        } else{
+            $('.dastebandi-header').css('display','flex');
+            $('header').css('height','161px');
+        }
+    });
 });
 
 
@@ -994,6 +1034,26 @@ function check_btnclose_input_search() {
     } else {
         icon_close.style.display = 'none';
     }
+}
+
+function close_input_search(){
+    document.querySelector('.input-search-header').value='';
+    document.querySelector('.btn-input-search-header').style.display='none';
+}
+
+function check_btnclose_input_search2() {
+    var input_search = document.querySelector('.input-search-header2');
+    var icon_close = document.querySelector('.btn-input-search-header2');
+    if (input_search.value != '') {
+        icon_close.style.display = 'inherit';
+    } else {
+        icon_close.style.display = 'none';
+    }
+}
+
+function close_input_search2(){
+    document.querySelector('.input-search-header2').value='';
+    document.querySelector('.btn-input-search-header2').style.display='none';
 }
 
 function show_hesab_karbari() {
@@ -1092,18 +1152,88 @@ function return_to_top() {
 }
 
 function check_valid_email() {
-    debugger;
-    let val_input = document.querySelector('.input-email-footer');
-    let error_input = document.querySelector('.p-errore');
-    if (val_input.value == '') {
-        error_input.innerHTML = 'این فیلد نمی‌تواند خالی باشد';
-    }else {
-        error_input.innerHTML = '';
-    }
-    for (let i = 0; i < val_input.length; i++) {
-        if (val_input[i] != '@') {
-            error_input.innerHTML = 'پست الکترونیک وارد شده درست نیست';
-        }
-    }
 
+    let val_input = document.querySelector('.input-email-footer').value;
+    let error_input = document.querySelector('.p-errore');
+    let btn_submit_email = document.querySelector('.btn-email');
+    if (val_input == '') {
+        error_input.innerHTML = 'این فیلد نمی‌تواند خالی باشد';
+        btn_submit_email.style.backgroundColor = '#e0e0e2';
+
+    } else if (val_input.includes('@gmail.com')) {
+        error_input.innerHTML = '';
+        btn_submit_email.style.backgroundColor = '#ef4056';
+    } else {
+        error_input.innerHTML = 'پست الکترونیک وارد شده درست نیست';
+        btn_submit_email.style.backgroundColor = '#e0e0e2';
+
+    }
 }
+
+function show_soal1() {
+    let javab1 = document.querySelector('.body-d1-body-call-poshtiban');
+    if (javab1.style.display == 'inherit') {
+        javab1.style.display = 'none';
+    } else {
+        javab1.style.display = 'inherit';
+    }
+}
+
+function show_soal2() {
+    let javab1 = document.querySelector('.body-d2-body-call-poshtiban');
+    if (javab1.style.display == 'inherit') {
+        javab1.style.display = 'none';
+    } else {
+        javab1.style.display = 'inherit';
+    }
+}
+
+function show_soal3() {
+    let javab1 = document.querySelector('.body-d3-body-call-poshtiban');
+    if (javab1.style.display == 'inherit') {
+        javab1.style.display = 'none';
+    } else {
+        javab1.style.display = 'inherit';
+    }
+}
+
+function show_safhe_poshtiban() {
+    let safhe_poshtiban = document.querySelector('.safhe-call-poshtiban');
+    let btn_poshtiban = document.querySelector('.btn-poshtiban');
+
+    if (safhe_poshtiban.style.bottom == '76px') {
+        safhe_poshtiban.style.bottom = '-100%';
+        btn_poshtiban.innerHTML = 'headset_mic';
+    } else {
+        safhe_poshtiban.style.bottom = '76px';
+        btn_poshtiban.innerHTML = 'close';
+    }
+}
+
+function close_safhe_poshtiban(){
+    let safhe_poshtiban = document.querySelector('.safhe-call-poshtiban');
+    let btn_poshtiban = document.querySelector('.btn-poshtiban');
+    safhe_poshtiban.style.bottom = '-100%';
+    btn_poshtiban.innerHTML = 'headset_mic';
+}
+
+function show_safhe_poshtiban_mobile(){
+    let safhe_poshtiban = document.querySelector('.safhe-call-poshtiban');
+    let btn_poshtiban = document.querySelector('.btn-poshtiban');
+
+    if (safhe_poshtiban.style.bottom == '0px') {
+        safhe_poshtiban.style.bottom = '-100%';
+        btn_poshtiban.innerHTML = 'headset_mic';
+    } else {
+        safhe_poshtiban.style.bottom = '0px';
+        btn_poshtiban.innerHTML = 'close';
+    }
+}
+
+function show_nav_mobile(){
+    document.querySelector('.nav-mobile').style.right='0';
+    document.querySelector('.safhe-black').style.zIndex='10000';
+    document.querySelector('.safhe-black').style.opacity='1';
+}
+
+

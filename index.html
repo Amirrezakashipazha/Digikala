@@ -30,7 +30,7 @@
                     <i class="fas fa-search"></i>
                     <input type="search" placeholder="جستجو" class="input-search-header"
                         onkeydown="check_btnclose_input_search()" onkeyup="check_btnclose_input_search()">
-                    <i class="	fa fa-close btn-input-search-header"></i>
+                    <i class="	fa fa-close btn-input-search-header" onclick="close_input_search()"></i>
                     <div class="form-click-search-header">
                         <div class="d-form-click-search-header">
                             <div class="khat-blue"></div>
@@ -1176,6 +1176,39 @@
         </section>
     </header>
 
+    <section class="header-mobile">
+
+        <div class="d1-h-mobile">
+            <a href="#">
+                <div class="bg-header"></div>
+            </a>
+        </div>
+
+        <div class="d2-h-mobile">
+            <i class="	fa fa-navicon" onclick="show_nav_mobile()"></i>
+            <a href="index.html"><img src="img/logo-site.svg" alt=""></a>
+            <i class="	far fa-question-circle" onclick="show_safhe_poshtiban_mobile()"></i>
+        </div>
+        <div class="d3-h-mobile">
+            <form action="" class="form-search-mobile">
+                <i class="	fas fa-search"></i>
+                <input type="search" placeholder="جستجو">
+            </form>
+            <i class="material-icons">person_outline</i>
+            <i class="material-icons">shopping_cart</i>
+        </div>
+        <div class="d4-h-mobile">
+            <div>
+                <i class="material-icons"> location_on</i>
+                <p>لطفا شهر خود را انتخاب کنید</p>
+            </div>
+            <i class="	fas fa-angle-left"></i>
+
+        </div>
+
+    </section>
+
+
     <section class="slider-big-header">
         <div class="overflow-slider-big">
             <div class="d1-overflow-slider-big">
@@ -1206,8 +1239,10 @@
                 <a href="#"><img src="img/img9-slider-big.jpg" alt=""></a>
             </div>
         </div>
+
         <i class="	fas fa-angle-right anggle-slider-big anggle-right-slider-big"></i>
         <i class="	fas fa-angle-left anggle-slider-big anggle-left-slider-big"></i>
+
         <div class="btns-slider-big">
             <div class="btn-select"></div>
             <div class=""></div>
@@ -1226,63 +1261,79 @@
 
 
         <section class="sec1-main">
-            <a href="#">
-                <div>
-                    <img src="img/img1-sec1-main.png" alt="">
-                    <p>دیجی‌کالا جت</p>
-                </div>
-            </a>
-            <a href="#">
-                <div>
-                    <img src="img/img2-sec1-main.png" alt="">
-                    <p>قرعه‌کشی آیفون ۱۳</p>
-                </div>
-            </a>
-            <a href="#">
-                <div>
-                    <img src="img/img3-sec1-main.png" alt="">
-                    <p>دیجی پی</p>
-                </div>
-            </a>
-            <a href="#">
-                <div>
-                    <img src="img/img4-sec1-main.png" alt="">
-                    <p>مهربانی در مهر</p>
-                </div>
-            </a>
-            <a href="#">
-                <div>
-                    <img src="img/img5-sec1-main.png" alt="">
-                    <p>بازگشت به مدرسه</p>
-                </div>
-            </a>
-            <a href="#">
-                <div>
-                    <img src="img/img6-sec1-main.png" alt="">
-                    <p>حراج پایان فصل</p>
-                </div>
-            </a>
-            <a href="#">
-                <div>
-                    <img src="img/img7-sec1-main.png" alt="">
-                    <p>چرخ و بخت</p>
-                </div>
-            </a>
-            <a href="#">
-                <div>
-                    <div class="btn-more">
-                        <i class="	fas fa-circle"></i>
-                        <i class="	fas fa-circle"></i>
-                        <i class="	fas fa-circle"></i>
+            <div class="d-sec1-main">
+                <a href="#">
+                    <div>
+                        <img src="img/img1-sec1-main.png" alt="">
+                        <p>دیجی‌کالا جت</p>
+                    </div>
+                </a>
+            </div>
+            <div class="d-sec1-main">
+                <a href="#">
+                    <div>
+                        <img src="img/img2-sec1-main.png" alt="">
+                        <p>قرعه‌کشی آیفون ۱۳</p>
+                    </div>
+                </a>
+            </div>
+            <div class="d-sec1-main">
+                <a href="#">
+                    <div>
+                        <img src="img/img3-sec1-main.png" alt="">
+                        <p>دیجی پی</p>
+                    </div>
+                </a>
+            </div>
+            <div class="d-sec1-main">
+                <a href="#">
+                    <div>
+                        <img src="img/img4-sec1-main.png" alt="">
+                        <p>مهربانی در مهر</p>
+                    </div>
+                </a>
+            </div>
+            <div class="d-sec1-main">
+                <a href="#">
+                    <div>
+                        <img src="img/img5-sec1-main.png" alt="">
+                        <p>بازگشت به مدرسه</p>
+                    </div>
+                </a>
+            </div>
+            <div class="d-sec1-main">
+                <a href="#">
+                    <div>
+                        <img src="img/img6-sec1-main.png" alt="">
+                        <p>حراج پایان فصل</p>
+                    </div>
+                </a>
+            </div>
+            <div class="d-sec1-main">
+                <a href="#">
+                    <div>
+                        <img src="img/img7-sec1-main.png" alt="">
+                        <p>چرخ و بخت</p>
+                    </div>
+                </a>
+            </div>
+            <div class="d-sec1-main">
+                <a href="#">
+                    <div>
+                        <div class="btn-more">
+                            <i class="	fas fa-circle"></i>
+                            <i class="	fas fa-circle"></i>
+                            <i class="	fas fa-circle"></i>
+                        </div> 
                     </div>
                     <p>بیشتر</p>
-
-                </div>
+                </a>
+            </div>
 
             </a>
         </section>
 
-        <section class="slider-shegeft-angiz">
+         <section class="slider-shegeft-angiz">
             <section class="sec-slider-overflow">
                 <div class="d-head-slider-shegeft-angiz">
                     <a href="#">
@@ -1482,37 +1533,42 @@
                 <a href="#">تا ۳۰% تخفیف</a>
             </div>
             <div class="d2-pishnahad-shegeft-angiz">
-                <a href="#">
-                    <div class="d1-fresh">
-                        <img src="img/img1-fresh.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="d2-fresh">
-                        <img src="img/img2-fresh.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="d3-fresh">
-                        <img src="img/img3-fresh.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="d4-fresh">
-                        <img src="img/img4-fresh.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="d5-fresh">
-                        <img src="img/img5-fresh.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="d6-fresh">
-                        <img src="img/img6-fresh.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="pishaz-n-kala">بیش از ۱۰۰ کالا<i class="	fas fa-arrow-left"></i></a>
+                <div class="d-mahsolat">
+                    <a href="#">
+                        <div class="d1-fresh">
+                            <img src="img/img1-fresh.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="d2-fresh">
+                            <img src="img/img2-fresh.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="d3-fresh">
+                            <img src="img/img3-fresh.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="d4-fresh">
+                            <img src="img/img4-fresh.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="d5-fresh">
+                            <img src="img/img5-fresh.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="d6-fresh">
+                            <img src="img/img6-fresh.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="pishaz-n-kala">
+                    <a href="#">بیش از ۱۰۰ کالا</a><i class="	fas fa-arrow-left"></i>
+                </div>
             </div>
         </section>
 
@@ -1697,7 +1753,7 @@
             <i class="	fas fa-angle-left anggle-sec8-main" onclick="to_right_sec8()"></i>
         </section>
 
-        <section class="sec6-main">
+        <section class="sec9-main">
             <a href="#"><img src="img/img2-tabligh.jpg" alt=""></a>
             <a href="#"><img src="img/img1-tabligh.gif" alt=""></a>
         </section>
@@ -2502,7 +2558,7 @@
     </main>
 
 
-
+    
     <div class="safhe-black"></div>
 
     <div class="chose-map">
@@ -2588,50 +2644,57 @@
         </div>
 
         <div class="d3-footer">
-            <ul>
-                <li>
-                    <h4>با دیجی‌کالا</h4>
-                </li>
-                <li><a href="#">اتاق خبر دیجی‌کالا</a></li>
-                <li><a href="#">فروش در دیجی‌کالا</a></li>
-                <li><a href="#">فرصت‌های شغلی</a></li>
-                <li><a href="#">گزارش تخلف در دیجی‌کالا</a></li>
-                <li><a href="#">تماس با دیجی‌کالا</a></li>
-                <li><a href="#">درباره دیجی‌کالا</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <h4>خدمات مشتریان</h4>
-                </li>
-                <li><a href="#">پاسخ به پرسش‌های متداول</a></li>
-                <li><a href="#">رویه‌های بازگرداندن کالا</a></li>
-                <li><a href="#">شرایط استفاده</a></li>
-                <li><a href="#">حریم خصوصی</a></li>
-                <li><a href="#">گزارش باگ</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <h4>راهنمای خرید از دیجی‌کالا</h4>
-                </li>
-                <li><a href="#">نحوه ثبت سفارش</a></li>
-                <li><a href="#">رویه ارسال سفارش</a></li>
-                <li><a href="#">شیوه‌های پرداخت</a></li>
-            </ul>
+            <div class="d-right-d3-footer">
+                <ul>
+                    <li>
+                        <h4>با دیجی‌کالا</h4>
+                    </li>
+                    <li><a href="#">اتاق خبر دیجی‌کالا</a></li>
+                    <li><a href="#">فروش در دیجی‌کالا</a></li>
+                    <li><a href="#">فرصت‌های شغلی</a></li>
+                    <li><a href="#">گزارش تخلف در دیجی‌کالا</a></li>
+                    <li><a href="#">تماس با دیجی‌کالا</a></li>
+                    <li><a href="#">درباره دیجی‌کالا</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>خدمات مشتریان</h4>
+                    </li>
+                    <li><a href="#">پاسخ به پرسش‌های متداول</a></li>
+                    <li><a href="#">رویه‌های بازگرداندن کالا</a></li>
+                    <li><a href="#">شرایط استفاده</a></li>
+                    <li><a href="#">حریم خصوصی</a></li>
+                    <li><a href="#">گزارش باگ</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>راهنمای خرید از دیجی‌کالا</h4>
+                    </li>
+                    <li><a href="#">نحوه ثبت سفارش</a></li>
+                    <li><a href="#">رویه ارسال سفارش</a></li>
+                    <li><a href="#">شیوه‌های پرداخت</a></li>
+                </ul>
+            </div>
+            
 
             <div class="d-left-d3-footer">
-                <h4>همراه ما باشید!</h4>
-                <div class="d-social-media">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
-                    <a href="#"><i class="fa fa-film"></i></a>
+                <div class="head-d-left-d3-footer">
+                    <h4>همراه ما باشید!</h4>
+                    <div class="d-social-media">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                        <a href="#"><i class="fa fa-film"></i></a>
+                    </div>
+                    <p>با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</p>
                 </div>
-                <p>با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</p>
+
                 <div class="d-form-d3-footer">
                     <form action="">
                         <input type="email" class="input-email-footer" placeholder="ایمیل شما"
-                            onkeydown="check_valid_email()" onkeyup="check_valid_email()">
-                        <button type="submit">ثبت</button>
+                            onkeydown="check_valid_email()" onkeyup="check_valid_email()"
+                            onchange="check_valid_email()">
+                        <button type="submit" class="btn-email">ثبت</button>
                     </form>
                     <p class="p-errore"></p>
                 </div>
@@ -2650,6 +2713,10 @@
                 <div><a href="#"><img src="img/myket.svg" alt=""></a></div>
                 <div><a href="#"><img src="img/sib-app.svg" alt=""></a></div>
                 <div><a href="#"><img src="img/More.svg" alt=""></a></div>
+            </div>
+            <div class="more-d4-footer">
+                <a href="#">اطلاعات بیشتر</a>
+                <i class="fas fa-angle-left"></i>
             </div>
         </div>
 
@@ -2700,13 +2767,119 @@
     </section>
 
 
+    <div class="call-poshtiban" onclick="show_safhe_poshtiban()">
+        <i class="material-icons btn-poshtiban">headset_mic</i>
+    </div>
 
+    <div class="safhe-call-poshtiban">
+        <div class="head-call-poshtiban">
+            <h3>پشتیبانی آنلاین</h3>
+            <i class="fas fa-arrow-left" onclick="close_safhe_poshtiban()"></i>
+        </div>
+        <div class="body-call-poshtiban">
+            <div class="d1-body-call-poshtiban">
+                <h4>سلام👋👋</h4>
+                <p>جواب سوال‌هاتون رو می‌تونید در زیر پیدا کنید.
+                    در غیر اینصورت از ما بپرسید، ما همیشه به سوالاتتون جواب می‌دیم.😊
+                </p>
+            </div>
+            <div class="d-body-call-poshtiban">
+                <div class="head-d-body-call-poshtiban head-d1-body-call-poshtiban" onclick="show_soal1()">
+                    <h4>چگونه میتوانم یک پروفایل ایجاد کنم؟</h4>
+                    <i class="	fas fa-angle-up"></i>
+                </div>
+                <div class="body-d-body-call-poshtiban body-d1-body-call-poshtiban">
+                    <p>در وب سایت روی گزینه "ثبت نام" کلیک کنید. میتوانید با استفاده از شماره موبایل ثبت نام خود را
+                        انجام دهید. (کد فعال سازی برایتان پیامک میشود .) بعد از وارد نمودن کد فعالسازی ، ثبت نام انجام
+                        می شود. سپس روی گزینه تکمیل اطلاعات کلیک و اطلاعات خود را تکمیل نمایید.</p>
+                </div>
+            </div>
+            <div class="d-body-call-poshtiban">
+                <div class="head-d-body-call-poshtiban head-d2-body-call-poshtiban" onclick="show_soal2()">
+                    <h4>چطور در دیجی کالا سفارش خود را ثبت کنم ؟</h4>
+                    <i class="	fas fa-angle-up"></i>
+                </div>
+                <div class="body-d-body-call-poshtiban body-d2-body-call-poshtiban">
+                    <p>در وب سایت روی گزینه "ثبت نام" کلیک کنید. میتوانید با استفاده از شماره موبایل ثبت نام خود را
+                        انجام دهید. (کد فعال سازی برایتان پیامک میشود .) بعد از وارد نمودن کد فعالسازی ، ثبت نام انجام
+                        می شود. سپس روی گزینه تکمیل اطلاعات کلیک و اطلاعات خود را تکمیل نمایید.</p>
+                </div>
+            </div>
+            <div class="d-body-call-poshtiban">
+                <div class="head-d-body-call-poshtiban head-d3-body-call-poshtiban" onclick="show_soal3()">
+                    <h4>کالایی را که در طرح پیشنهاد شگفت انگیز می باشد می توان با تعداد بیش از یک عدد خریداری کرد؟</h4>
+                    <i class="	fas fa-angle-up"></i>
+                </div>
+                <div class="body-d-body-call-poshtiban body-d3-body-call-poshtiban">
+                    <p>در وب سایت روی گزینه "ثبت نام" کلیک کنید. میتوانید با استفاده از شماره موبایل ثبت نام خود را
+                        انجام دهید. (کد فعال سازی برایتان پیامک میشود .) بعد از وارد نمودن کد فعالسازی ، ثبت نام انجام
+                        می شود. سپس روی گزینه تکمیل اطلاعات کلیک و اطلاعات خود را تکمیل نمایید.</p>
+                </div>
+            </div>
+            <div class="d5-body-call-poshtiban">
+                <p>جواب سوالتون رو پیدا نکردید؟</p>
+                <p>گفتگو با پشتیبان آنلاین<i class="fas fa-angle-left"></i></p>
+            </div>
+        </div>
+    </div>
 
+    <div class="search-mobile">
+        <form action="">
+            <i class="fas fa-arrow-right btn-close-search-mobile"></i>
 
+            <input type="search" placeholder="جستجو" class="input-search-header2"
+                onkeydown="check_btnclose_input_search2()" onkeyup="check_btnclose_input_search2()">
+            <i class="	fa fa-close btn-input-search-header2" onclick="close_input_search2()"></i>
+        </form>
+        <div class="form-click-search-header2">
+            <div class="d-form-click-search-header">
+                <h3><i class="fas fa-fire"></i>جستجوهای پرطرفدار</h3>
+                <div class="portarafdar-akhir">
+                    <a href="#">کاپشن مردانه<i class="fas fa-angle-left"></i></a>
+                    <a href="#">دفتر دولتی<i class="fas fa-angle-left"></i></a>
+                    <a href="#">مانتو پاییزی<i class="fas fa-angle-left"></i></a>
+                    <a href="#">خط کش شابلون دار<i class="fas fa-angle-left"></i></a>
+                    <a href="#">تقویت کننده وای فای<i class="fas fa-angle-left"></i></a>
+                </div>
 
+            </div>
+        </div>
+    </div>
 
+    <div class="nav-mobile">
+        <div class="d1-nav-mobile">
+            <a href="index.html"><img src="img/logo-digikala-footer.svg" alt=""></a>
+        </div>
+        <div class="d2-nav-mobile">
+            <ul>
+                <li><i class="fa fa-shopping-basket"></i><a href="#">سوپرمارکت</a></li>
+                <li><i class="fas fa-fire-alt"></i><a href="#">پر فروش ترین ها</a></li>
+                <li><i class="fas fa-percentage"></i><a href="#">تخفیف ها و پیشنهاد ها</a></li>
+                <li><i class="fas fa-percent"></i><a href="#">شگفت انگیزها</a></li>
+                <li><i class="far fa-question-circle"></i><a href="#">سوالی دارید؟</a></li>
+                <li><i class="fas fa-warehouse"></i><a href="#">فروشنده شوید</a></li>
 
+            </ul>
+        </div>
+        <div class="d3-mobile">
+            <ul>
+                <li><h4>دسته بندی کالاها</h4></li>
+                <li>موبایل<i class="	fas fa-angle-down"></i></li>
+                <li>کالای دیجیتال<i class="	fas fa-angle-down"></i></li>
+                <li>خودرو، ابزار و تجهیزات صنعتی<i class="	fas fa-angle-down"></i></li>
+                <li>مد و پوشاک<i class="	fas fa-angle-down"></i></li>
+                <li>کالاهای سوپرمارکتی<i class="	fas fa-angle-down"></i></li>
+                <li>اسباب بازی، کودک و نوزاد<i class="	fas fa-angle-down"></i></li>
+                <li>محصولات بومی و محلی<i class="	fas fa-angle-down"></i></li>
+                <li>زیبایی و سلامت<i class="	fas fa-angle-down"></i></li>
+                <li>خانه و آشپزخانه<i class="	fas fa-angle-down"></i></li>
+                <li>کتاب، لوازم تحریر و هنر<i class="	fas fa-angle-down"></i></li>
+                <li>ورزش و سفر<i class="	fas fa-angle-down"></i></li>
+            </ul>
+        </div>
+    </div>
 
+    
 
     <script src="javascript/jquery-3.3.1.min.js"></script>
     <script src="javascript/function.js"></script>
